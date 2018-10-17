@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:helpers="clr-namespace:XamCoder.Helpers"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             x:Class="XamCoder.Menu">
+    <ContentPage.Content>
+        <StackLayout  HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand">
+         
+            <Grid WidthRequest="{Binding RaduisTwo}" HeightRequest="{Binding RaduisTwo}" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Padding="{Binding Padding}">
+                <!--<StackLayout VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="0" Grid.Row="0" WidthRequest="{Binding RaduisTwo}" HeightRequest="{Binding RaduisTwo}">
+                    <helpers:ShapeView Color="Beige" ShapeType="Circle" StrokeColor="Silver" 
+                                       StrokeWidth="1" Padding="0.4"
+                               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="0" Grid.Row="0" WidthRequest="{Binding Raduis}" HeightRequest="{Binding Raduis}">
+                    <helpers:ShapeView Color="AliceBlue" ShapeType="Circle" StrokeColor="Silver" 
+                                       StrokeWidth="1" Padding="0.4"
+                               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>-->
+                <StackLayout Grid.Column="0" Grid.Row="0" Spacing="0"
+                             VerticalOptions="Center" HorizontalOptions="Center"
+                             WidthRequest="{Binding RaduisTwo}" HeightRequest="{Binding RaduisTwo}">
+                    <StackLayout Orientation="Horizontal" Spacing="0">
+                        <BoxView BackgroundColor="Transparent" x:Name="box1" />
+                        <Grid WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}"
+                              HorizontalOptions="Center" VerticalOptions="Center">
+                            <helpers:ShapeView Grid.Column="0" Grid.Row="0" ShapeType="Circle" StrokeColor="Silver" StrokeWidth="1"  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}"
+                            Padding="0.4" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            <Label Grid.Column="0" Grid.Row="0" Text="I" TextColor="Silver" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        </Grid>
+                        <Label Text="this is a test" TextColor="Silver" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="0">
+                        <BoxView BackgroundColor="Transparent" x:Name="box2"/>
+                        <Grid  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}" HorizontalOptions="Center" VerticalOptions="Center">
+                            <helpers:ShapeView Grid.Column="0" Grid.Row="0" ShapeType="Circle" StrokeColor="Silver" StrokeWidth="1"  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}"
+                             Padding="0.4"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            <Label Grid.Column="0" Grid.Row="0" Text="II" TextColor="Silver" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="0">
+                        <BoxView BackgroundColor="Transparent" x:Name="box3"/>
+                        <Grid  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}" HorizontalOptions="Center" VerticalOptions="Center">
+                            <helpers:ShapeView Grid.Column="0" Grid.Row="0" ShapeType="Circle" StrokeColor="Silver" StrokeWidth="1"  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}"
+                              Padding="0.4" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            <Label Grid.Column="0" Grid.Row="0" Text="III" TextColor="Silver" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="0">
+                        <BoxView BackgroundColor="Transparent" x:Name="box4"/>
+                        <Grid  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}" HorizontalOptions="Center" VerticalOptions="Center">
+                            <helpers:ShapeView Grid.Column="0" Grid.Row="0" ShapeType="Circle" StrokeColor="Silver" StrokeWidth="1"  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}"
+                             Padding="0.4"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            <Label Grid.Column="0" Grid.Row="0" Text="IV" TextColor="Silver" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="0">
+                        <BoxView BackgroundColor="Transparent" x:Name="box5"/>
+                        <Grid  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}" HorizontalOptions="Center" VerticalOptions="Center">
+                            <helpers:ShapeView Grid.Column="0" Grid.Row="0" ShapeType="Circle" StrokeColor="Silver" StrokeWidth="1"  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}"
+                              Padding="0.4" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            <Label Grid.Column="0" Grid.Row="0" Text="IV" TextColor="Silver" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="0">
+                        <BoxView BackgroundColor="Transparent" x:Name="box6"/>
+                        <Grid  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}" HorizontalOptions="Center" VerticalOptions="Center">
+                            <helpers:ShapeView Grid.Column="0" Grid.Row="0" ShapeType="Circle" StrokeColor="Silver" StrokeWidth="1"  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}"
+                              Padding="0.4" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            <Label Grid.Column="0" Grid.Row="0" Text="VI" TextColor="Silver" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="0">
+                        <BoxView BackgroundColor="Transparent" x:Name="box7"/>
+                        <Grid  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}" HorizontalOptions="Center" VerticalOptions="Center">
+                            <helpers:ShapeView Grid.Column="0" Grid.Row="0" ShapeType="Circle" StrokeColor="Silver" 
+                                       StrokeWidth="1"  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}" Padding="0.4"
+                               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            <Label Grid.Column="0" Grid.Row="0" Text="V" TextColor="Silver" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="0">
+                        <BoxView BackgroundColor="Transparent" x:Name="box8"/>
+                        <Grid  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}" HorizontalOptions="Center" VerticalOptions="Center">
+                            <helpers:ShapeView Grid.Column="0" Grid.Row="0" ShapeType="Circle" StrokeColor="Silver" 
+                                       StrokeWidth="1"  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}" Padding="0.4"
+                               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            <Label Grid.Column="0" Grid.Row="0" Text="VI" TextColor="Silver" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="0">
+                        <BoxView BackgroundColor="Transparent" x:Name="box9"/>
+                        <Grid  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}" HorizontalOptions="Center" VerticalOptions="Center">
+                            <helpers:ShapeView Grid.Column="0" Grid.Row="0" ShapeType="Circle" StrokeColor="Silver" 
+                                       StrokeWidth="1"  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}" Padding="0.4"
+                               VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                            <Label Grid.Column="0" Grid.Row="0" Text="VII" TextColor="Silver" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
