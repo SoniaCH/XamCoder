@@ -28,7 +28,7 @@
                               HorizontalOptions="Center" VerticalOptions="Center">
                             <helpers:ShapeView Grid.Column="0" Grid.Row="0" ShapeType="Circle" StrokeColor="Silver" StrokeWidth="1"  WidthRequest="{Binding SmallRaduis}" HeightRequest="{Binding SmallRaduis}"
                             Padding="0.4" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
-                            <Label Grid.Column="0" Grid.Row="0" Text="I" TextColor="Silver" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                            <Label Grid.Column="0" Grid.Row="0" Text="I" TextColor="Gray" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
                            HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
                         </Grid>
                         <Label Text="this is a test" TextColor="Silver" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
